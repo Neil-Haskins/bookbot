@@ -3,8 +3,6 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     nums_of_chars = get_nums_of_chars(text)
-    #print(num_words)
-    #print(nums_of_chars)
     print_char_report(book_path, num_words, nums_of_chars)
 
 def get_num_words(text):
@@ -20,7 +18,6 @@ def get_nums_of_chars(text):
         else:
             char_dict[char] = 1
     return char_dict
-    # return dict(sorted(char_dict.items()))
 
 def get_book_text(path):
     with open(path) as f:
